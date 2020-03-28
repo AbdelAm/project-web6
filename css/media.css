@@ -1,0 +1,110 @@
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 70%;
+    }
+    header nav .logo {
+        left: 2%;
+    }
+    header nav .container ul > li {
+        margin-right: 1.5vw;
+    }
+    header nav .container .right-nav > select {
+        margin-right: 1.5vw;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    header nav .logo {
+        left: 10%;
+    }
+    header nav .container {
+        display: none;
+    }
+    header nav .mobile-menu-btn {
+        display: block;
+        right: 10%;
+    }
+    header nav .mobile-menu-list {
+        display: block;
+    }
+    .our-mission .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .our-mission .container .mission-title {
+        grid-column: 1 / 3;
+        width: 50%;
+        text-align: center;
+    }
+
+    .our-works .container .our-works-items-container .our-works-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .our-news .container .our-news-container .our-news-items {
+        grid-template-columns: repeat(5, 50%);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container {
+        width: 95%;
+    }
+    header .shape1-right {
+        width: 100%;
+        height: 70%;
+    }
+    header .cover .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    header .cover .cover-img {
+        grid-row: 1;
+    }
+    header .cover .cover-img img {
+        position: unset;
+    }
+    .our-mission .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .our-mission .container .mission-title {
+        grid-column: unset;
+        width: 100%;
+    }
+    .about-us .shape1-left {
+        top: -50%;
+        width: 50%;
+        height: 100%;
+    }
+    .about-us .shape2-right {
+        top: 20%;
+        width: 50%;
+        height: 100%;
+    }
+    .about-us .container {
+        grid-template-columns: 1fr;
+    }
+    .about-us .container .description {
+        text-align: center;
+    }
+    .our-works .shape2-left {
+        top: 0;
+        width: 100%;
+        height: 105%;
+    }
+    .our-works .container .our-works-items-container .our-works-items {
+        grid-template-columns: 1fr;
+    }
+    .our-news .shape2-right {
+        top: 30%;
+        width: 90%;
+        height: 90%;
+    }
+    .contact-us .contact-form {
+        grid-template-columns: 1fr;
+    }
+    .contact-us .contact-form textarea, .contact-us .contact-form input[type=submit] {
+        grid-column: unset;
+    }
+}
